@@ -1,7 +1,7 @@
-import MessageNow from "../examples/message"
+import VueMessageTemplate from "../examples/message"
 
 const components = [
-    MessageNow
+    VueMessageTemplate
 ];
 
 // 定义 install 方法
@@ -11,7 +11,7 @@ const install = function (Vue) {
         Vue.component(component.name, component) //component.name 此处使用到组件vue文件中的 name 属性
     })
 
-    Vue.prototype.$message = MessageNow
+    Vue.prototype.$message = VueMessageTemplate
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
