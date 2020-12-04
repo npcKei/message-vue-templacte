@@ -1,11 +1,14 @@
 {
-  "name": "vue-message",
+  "name": "vue-message-template",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "npckei",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-message-template -dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -18,6 +21,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
